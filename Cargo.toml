@@ -1,0 +1,17 @@
+[package]
+name = "trivial-sqs-worker"
+version = "1.0.0"
+authors = ["Allie <alexander.d.hill.89@gmail.com>"]
+edition = "2018"
+
+license = "BlueOak-1.0.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.32"
+clap = "2.33.1"
+rusoto_sqs = "0.45.0"
+rusoto_core = "0.45.0"
+tokio = { version = "0.2.22", features = ["rt-threaded"] }
+void = "1.0.2"
